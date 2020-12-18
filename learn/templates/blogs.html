@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<p> this is a block we generated </p>
+
+{% for p in posts %}
+ 
+<h1>  {{ p }} </h1> 
+<p>  {{ p.author }} </p> 
+<p>  {{ p.date }} </p> 
+<p>  {{ p.content }} </p> 
+<br>
+ 
+{% endfor %}
+ 
+
+
+{% endblock %}
